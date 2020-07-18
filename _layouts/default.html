@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ 'en-US' }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
   <head>
     
-    <title>{{ site.github.repository_name }}</title>
+    <meta charset="UTF-8">
+    
+    <title>{{ page.title | site.title | default: site.github.repository_name }}</title>
     
   </head>
   <body>
     
-    {% include navigation.html %}
+    {% include header.html %}
     
-    <!-- … -->
+    {{ content }}
+    
+    {% include footer.html %}
     
   </body>
 </html>
