@@ -9,7 +9,11 @@
   </head>
   <body>
     
-    {{ site.title | default: site.github.repository_name }}
+    <header>
+      <h1>
+        {{ site.title | default: site.github.repository_name }}
+      </h1>
+    </header>
     
   </body>
 </html>
