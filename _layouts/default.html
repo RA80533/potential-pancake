@@ -4,14 +4,14 @@
     
     <meta charset="UTF-8">
     
-    <title>{{ page.title | site.title | default: site.github.repository_name }}</title>
+    <title>{{ site.title | default: site.github.repository_name }}</title>
     
   </head>
   <body>
     
     <header>
       <h1>
-        {{ page.title | site.title | default: site.github.repository_name }}
+        {{ site.title | default: site.github.repository_name }}
       </h1>
     </header>
     
